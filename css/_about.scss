@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.about-section{
+
+    width: 100%;
+    height: 100%;
+    .aboutus {
+        background-color: #F7F7F7;
+        padding: 20px 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+
+// .section-image{
+    // width: 100%;
+    // height: 100%;
+    .about-image{
+        // border: 2px solid red;
+        position: relative;
+        width: 100%;
+        // height: 100%;
+        .abimg1{
+            position: absolute;
+            width:400px;
+            top: 70px;
+            left: 250px;
+          
+        }
+        .abimg2{
+            position: absolute;
+            width: 300px;
+            top: 120px;
+            left: 680px;
+        }
+        .abimg3{
+            position: absolute;
+            width: 470px;
+            left: 500px;
+            top: 430px;
+            border: 30px solid white;
+           margin: -20px;
+      
+        }
+        .loq1{
+            position: absolute;
+            top: 560px;
+            left: 360px;
+        }
+        .loq2{
+            position: absolute;
+            left: 730px;
+            top: 70px;
+        }
+    }
+}
+
+// ------------------about-section end-----------
+
+  .sectionTxt{
+     font-family: Arial, Helvetica, sans-serif;
+       margin-top: 60%;
+       width: 100%;
+       height: 100%;
+       margin-left: 10%;
+      border: 2px solid red;
+    .txtabout{
+        top: 80%;
+        .aboutTxt{
+
+            .sub-title{
+                font-weight: 600;
+                font-size: 20px;
+            }
+            .necnas{
+                margin-bottom: 30px;
+            }
+            
+                .btn-read{
+                    background-color: rgb(67, 106, 210) ;
+                border-radius: 5px;
+                border: none;
+                padding: 15px 40px;
+                span{
+                    color: #F7F7F7;
+                }
+                ::hover{
+                   color: red;
+                }
+                
+            }
+            
+
+            }
+        }
+    }
+
+    // --------------sectionTxt end------------
+  
+    .web{
+        background-color: rgb(33, 24, 24);
+        position: relative;
+        width: 100%;
+        // height: 100%;
+    margin-top: 150px;
+        .wedevtxt{
+            
+            position: absolute;
+            width: 400px;
+            font-size: 20px;
+            p{
+                margin-top: 30px;
+                font-size: 16px;
+                color: #6C6f72;
+            }
+         
+        }
+        .wedevimg{
+            position: absolute;
+            left: 700px;
+            border: 2px solid red;
+            top: 50px;
+            margin: 15px;
+            
+            // img{
+            //     width: 450px;
+            // }
+
+          .plyicon{
+          
+            a{
+                position: absolute;
+                left: 215px;
+                top: 70px;
+               font-size: 65px;
+               }
+              
+          }
+          
+        }
+        .skill-group {
+            // border: 2px solid red;
+            position: absolute;
+            top: 220px;
+            
+            margin: 0 auto;
+            width: 15%;
+            
+        }
+        // .skill-group > p {
+        //     color: white
+        // }
+        .skill-bar {
+            width: 150%;
+            background-color: white;
+        }
+        .skill-value {
+            text-align: right;
+            // padding: px;
+            color: black;
+        }
+
+        .html {
+            span{
+                color: white;
+            }
+            width: 90%;
+            margin: 12px;
+            background-color:#2A63FF;
+        }
+        .js {
+            span{
+                color: white;
+            }
+            width: 70%;
+            margin: 12px;
+            background-color:#2A63FF;
+        }
+        .python {
+            span{
+                color: white;
+            }
+            width: 55%;
+            margin: 12px;
+            background-color:#2A63FF;
+        }
+       
+    }
+    // -------------web section end--------
+
+    .meetOur{
+        position: relative;
+        // border: 2px solid red;
+        // margin-bottom: 480px;
+        margin-top: -300px;
+        width: 100%;
+        padding: 0 0 500px 0;
+        height: 80vh;
+        margin-top: 65%;
+        background-image: url(https://radiustheme.com/demo/html/neeon/media/elements/element_20.png);
+        background-position:top right;
+        background-repeat: no-repeat;
+        // background-size: cover;
+        // background-attachment: fixed;
+        // background-size: 100% 100%;
+        
+        
+      .meetTeam{
+        // border: 10px solid red;
+        // padding: 100px;
+        width: 100%;
+        // height: 50%;
+        text-align: center;
+        // margin-left: 300px;
+        font-size: 20px;
+        margin-bottom: 50px;
+        p{
+            width: 35%;
+            // border: 2px solid red;
+            margin-left: 500px;
+            color: #6C6f72;
+            font-size: 16px;
+        }
+    }
+            .container-columns{
+                // border: 2px solid red;
+                padding:0 0 150px 0;
+                .kol1{
+                    margin-right: 15px;
+
+                    .imgbox{
+                        overflow: hidden;
+                        // border: 2px solid black;
+                        // position: relative;
+                        // z-index: 1;
+                       
+                        img{
+                            transition: 0.5s ease-in-out;
+                            filter: grayscale(100%);
+                           
+                        }
+                        &:hover{
+                            img{
+                                transform: scale(1.1);
+                                filter: grayscale(0%);
+                            }
+                        }
+                    }
+                    h4{
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                    .ikon{
+                        // border: 3px solid red;
+                        text-align: center;
+                        i{
+                            background-color:#c2c2c2;
+                            color: white;
+                            border-radius: 50%;
+                            // font-size: 20px;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+                
+
+        
+   
+}
