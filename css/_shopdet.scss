@@ -633,3 +633,36 @@
     }
 
 }
+@media (max-width:576px){
+    .shop-post{
+        .items-box{
+            // border: 3px solid red;
+            // display: block;
+            // display: flex;
+            // flex-wrap: wrap;
+            .jacket-box{
+                width: 100%;
+                margin-right: 20px;
+                // border: 9px dashed yellow;
+                // display: none;
+            }
+        }
+    }
+}
+@media (min-width:576px) and (max-width:992px){
+    .shop-post{
+        .items-box{
+            // border: 3px solid red;
+            // display: block;
+            // display: flex;
+            // flex-wrap: wrap;
+            .jacket-box{
+                width: 100%;
+                // margin-right:-90px;
+                // border: 9px dashed yellow;
+            }
+        }
+    }
+}
+
+
