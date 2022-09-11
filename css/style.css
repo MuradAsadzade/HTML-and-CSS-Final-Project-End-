@@ -867,7 +867,7 @@ a {
   position: sticky;
   top: 0;
   padding: 20px;
-  z-index: 100;
+  z-index: 1000;
   left: 0;
 }
 .header-bottom .nav-menu li {
@@ -1005,7 +1005,6 @@ a {
   font-family: Roboto, sans-serif;
   padding-top: 92px;
   background-color: #0F1012;
-  border: 3px solid red;
 }
 #footer .container-boxes {
   display: flex;
@@ -1255,16 +1254,63 @@ a {
 #footer .footer-end-text .p-class {
   color: #CCCCCC;
   color: white;
-  border: 3px solid white;
   font-size: 16px;
 }
 
+@media (max-width: 450px) {
+  #header {
+    font-family: Roboto, sans-serif;
+  }
+  #header .header-top {
+    padding: 12px 10px;
+    width: 100%;
+    background-color: white !important;
+  }
+  #header .header-top .top-left {
+    display: none;
+  }
+  #header .header-top .top-right {
+    display: block !important;
+    text-align: center;
+  }
+  #header .header-top .top-right .sunday {
+    display: block !important;
+    margin: 0;
+    padding: 0px 10px 0 0;
+    width: 100%;
+    font-size: 12px;
+  }
+  #header .header-top .top-right .sunday i {
+    font-size: 12px;
+    color: #2962FF;
+  }
+  #header .header-top .top-right .sunday::after {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #header .header-top .top-right .chicago {
+    display: block !important;
+    font-size: 14px;
+    width: 100%;
+    color: #A5A6AA;
+  }
+  #header .header-top .top-right .chicago i {
+    font-size: 12px;
+    color: #2962FF;
+  }
+  #header .header-top .top-right .follow {
+    display: none;
+  }
+  #header .header-top .top-right ul {
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   #header {
     font-family: Roboto, sans-serif;
   }
   #header .header-top {
-    padding: 12px 25px;
+    padding: 12px 0px !important;
     width: 100%;
     background-color: white !important;
   }
@@ -1416,6 +1462,134 @@ a {
     font-size: 30px;
   }
 }
+@media (max-width: 200px) {
+  #footer .container-boxes {
+    display: block;
+  }
+  #footer .container-boxes .footer-logo {
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+    height: 220px;
+  }
+  #footer .container-boxes .footer-recent {
+    padding-left: 0;
+  }
+  #footer .container-boxes .footer-recent h3 {
+    font-weight: bold;
+  }
+  #footer .container-boxes .footer-recent .recent-image {
+    align-items: center;
+    padding: 0 10px;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-image-box {
+    height: 100px;
+    width: 100% !important;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-image-box img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-text {
+    width: 80%;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-text a {
+    width: 30% !important;
+    white-space: wrap;
+  }
+  #footer .container-boxes .categories {
+    padding-left: 0;
+    padding-bottom: 0px;
+    margin-top: -72px;
+  }
+  #footer .container-boxes .insta {
+    height: 230px;
+    margin-top: -20px;
+  }
+  #footer .container-boxes .insta .insta-images {
+    width: 100% !important;
+  }
+  #footer .container-boxes .insta .insta-images .insta-div {
+    margin-right: 10px;
+    margin-bottom: -5px;
+  }
+  #footer .container-boxes .insta .insta-images .insta-div img {
+    border-radius: 5px;
+  }
+  #footer hr {
+    margin-top: 20px;
+    background-color: white;
+  }
+  #footer .footer-end-text {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 400px) {
+  #footer .container-boxes {
+    display: block;
+  }
+  #footer .container-boxes .footer-logo {
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+    height: 220px;
+  }
+  #footer .container-boxes .footer-recent {
+    padding-left: 0;
+  }
+  #footer .container-boxes .footer-recent h3 {
+    font-weight: bold;
+  }
+  #footer .container-boxes .footer-recent .recent-image {
+    align-items: center;
+    padding: 0 10px;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-image-box {
+    height: 100px;
+    width: 100% !important;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-image-box img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-text {
+    width: 80%;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-text a {
+    width: 30% !important;
+    white-space: wrap;
+  }
+  #footer .container-boxes .categories {
+    padding-left: 0;
+    padding-bottom: 0px;
+    margin-top: -72px;
+  }
+  #footer .container-boxes .insta {
+    height: 230px;
+    margin-top: -20px;
+  }
+  #footer .container-boxes .insta .insta-images {
+    width: 100% !important;
+  }
+  #footer .container-boxes .insta .insta-images .insta-div {
+    margin-right: 10px;
+    margin-bottom: -5px;
+  }
+  #footer .container-boxes .insta .insta-images .insta-div img {
+    border-radius: 5px;
+  }
+  #footer hr {
+    margin-top: 20px;
+    background-color: white;
+  }
+  #footer .footer-end-text {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+}
 @media (max-width: 576px) {
   #footer .container-boxes {
     display: block;
@@ -1432,13 +1606,19 @@ a {
     font-weight: bold;
   }
   #footer .container-boxes .footer-recent .recent-image {
-    justify-content: flex-start !important;
+    align-items: center;
+    padding: 0 10px;
   }
-  #footer .container-boxes .footer-recent .recent-image img {
-    width: 37% !important;
+  #footer .container-boxes .footer-recent .recent-image .recent-image-box {
+    height: 100px;
+    width: 30% !important;
+  }
+  #footer .container-boxes .footer-recent .recent-image .recent-image-box img {
+    width: 100% !important;
+    height: 100% !important;
   }
   #footer .container-boxes .footer-recent .recent-image .recent-text {
-    white-space: nowrap;
+    white-space: wrap;
   }
   #footer .container-boxes .categories {
     padding-left: 0;
@@ -1450,14 +1630,13 @@ a {
     margin-top: -20px;
   }
   #footer .container-boxes .insta .insta-images {
-    width: 50%;
+    width: 80% !important;
   }
   #footer .container-boxes .insta .insta-images .insta-div {
     margin-right: 10px;
     margin-bottom: -5px;
   }
   #footer .container-boxes .insta .insta-images .insta-div img {
-    width: 100%;
     border-radius: 5px;
   }
   #footer hr {
@@ -7044,5 +7223,4 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
